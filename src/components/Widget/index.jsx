@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   background-color: ${({ theme }) => theme.colors.mainBg};
-  border: 1px solid ${({ theme }) => theme.colors.secondary };
+  border: 1px solid ${({ theme }) => theme.colors.secondary};
   border-radius: 4px;
   margin-bottom: 24px;
   margin-top: 24px;
@@ -24,7 +24,7 @@ const Widget = styled.div`
 
 Widget.Header = styled.header`
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.primary };
+  background-color: ${({ theme }) => theme.colors.primary};
   display: flex;
   justify-content: flex-start;
   padding: 18px 32px;
