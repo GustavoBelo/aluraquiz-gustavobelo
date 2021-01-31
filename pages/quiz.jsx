@@ -45,7 +45,7 @@ export default function QuizPage() {
     // fetch()...
     setTimeout(() => {
       setSecreenState(screenStates.QUIZ);
-    }, 0.5 * 1000);
+    }, 1 * 1000);
     // nasce ===didMount
   }, []);
 

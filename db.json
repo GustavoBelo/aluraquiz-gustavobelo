@@ -16,13 +16,111 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media1.tenor.com/images/5269722bab931c31c57bf176312e57cc/tenor.gif?itemid=10337684",
+        "title": "Qual foi a primeira palavra de Lisa?",
+        "description": "Só quem é fã",
+        "answer": 3,
+        "alternatives": [
+           "Caramba!",
+           "Papai",
+           "Mamãe",
+           "Bart"
+        ]
+      },
+      {
+        "image": "https://media1.tenor.com/images/7a868af630cd06af5538e563980bbb79/tenor.gif?itemid=5455824",
+        "title": "Bart é alérgico a ?",
+        "description": "Easy tbm vai",
+        "answer": 1,
+        "alternatives": [
+          "Abelhas",
+          "Camarão",
+          "Laranja",
+          "Amendoim"
+        ]
+      },
+      {
+        "image": "https://media1.tenor.com/images/867740dcffa071e105f32a7cc2ed287c/tenor.gif?itemid=17727603",
+        "title": "Qual foi o maior compilado de merda que a Marge já fez?",
+        "description": "Cagou demais hahaha",
+        "answer": 3,
+        "alternatives": [
+          "Ser presa, fumar cigarro e roubar",
+          "Alisar o cabelo, matar alguém e trair o Homer",
+          "Ser presa, tingir o cabelo e colocar silicone",
+          "Ser presa, matar a mulher de Nerd e trair Homer com o Moe"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3orifiLJQhdXGPKX9C/giphy.gif",
+        "title": "Qual foram os famosos que ainda não participaram da série?",
+        "description": "Os caras fizeram o Trump aparecer mesmo antes dele ser o presidente hahah",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "Kim Kardashian e Rihanna",
+          "Rihanna e Drake",
+          "Justin Bieber e Madonna",
+          "Madonna e Jesus Cristo"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/grfw1PFUp5k2c/giphy.gif",
+        "title": "Quantos anos tem o Burns?",
+        "description": "Esse tiozinho não morre nunca",
+        "answer": 3,
+        "alternatives": [
+          "104",
+          "84",
+          "144",
+          "Ninguém sabe"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/eNTxLwTGW7E64/giphy.gif",
+        "title": "Por que diabos eles têm a pele amarela?",
+        "description": "Talvez todos têm Síndrome de Gilbert hahah",
+        "answer": 1,
+        "alternatives": [
+          "Para combinar com a moda da época",
+          "Para chamar atenção das pessoas que estão mudando de canal",
+          "Para ser idêntico a história em quadrinhos",
+          "Era a cor favorita do autor"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3o6MbppyZktBLdJH4k/giphy.gif",
+        "title": "O que muda na abertura de cada episódio?",
+        "description": "Ata, virou um teste de atenção agora ._.",
+        "answer": 2,
+        "alternatives": [
+          "O modo que Homer sai do trabalho",
+          "Os solos do saxofone",
+          "A frase que Bart escreve no quadro",
+          "Nada mano kkkkk"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3o6MbnvgJkg7cd9V9C/giphy.gif",
+        "title": "Pelo que Homer vendeu sua alma pro capeta?",
+        "description": "Ele tava sedento, entendo :(",
+        "answer": 2,
+        "alternatives": [
+          "Por amor",
+          "Por dinheiro",
+          "Uma rosquinha",
+          "Uma cerveja duff"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/2rtQMJvhzOnRe/giphy.gif",
+        "title": "Estamos em qual temporada dos Simpsons?",
+        "description": "Infelizmente está chegando ao fim :(",
+        "answer": 0,
+        "alternatives": [
+          "32",
+          "37",
+          "31",
+          "40"
         ]
       }
     ],
