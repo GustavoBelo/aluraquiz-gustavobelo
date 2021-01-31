@@ -1,29 +1,14 @@
-/* eslint-disable no-console */
-/* eslint-disable func-names */
 import React from 'react';
-import styled from 'styled-components';
 import { useRouter } from 'next/router';
+
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
+import QuizContainer from '../src/components/QuizContainer';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
-
-const Title = styled.h1`
-  color: ${({ theme }) => theme.colors.primary};
-  font-size: 50px;
-`;
-
-export const QuizContainer = styled.div`
-  margin: auto 10%;
-  max-width: 350px;
-  padding-top: 45px;
-  width: 100%;
-  @media screen and (max-width: 500px){
-    margin: auto;
-    padding: 15px;
-  }
-`;
 
 export default function Home() {
   const router = useRouter();
@@ -35,7 +20,7 @@ export default function Home() {
 
         <Widget>
           <Widget.Header>
-            <Title>Os Simpsons</Title>
+            <h1>Quiz dos Simpsons</h1>
           </Widget.Header>
 
           <Widget.Content>
@@ -43,8 +28,6 @@ export default function Home() {
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
-              console.log('fazendo uma submissão pormeio do react');
-
               // router manda para a próxima página
             }}
             >
@@ -52,18 +35,15 @@ export default function Home() {
                 Teste seus conhecimentos sobre o famoso universo dos
                 Simpsons e divirta-se com o nosso quiz ;)
               </p>
-              <input
+              <Input
+                name="nomeDoUsuario"
                 placeholder="Digite seu nome aki o_O"
-                onChange={function (infosDoEvento) {
-                  setName(infosDoEvento.target.value);
-                }}
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Vamos jogar
-                {' '}
-                {name}
-                ?
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Vamos jogar ${name}?`}
+              </Button>
             </form>
 
           </Widget.Content>

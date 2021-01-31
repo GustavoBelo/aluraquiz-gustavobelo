@@ -28,7 +28,7 @@ Widget.Header = styled.header`
   display: flex;
   justify-content: flex-start;
   padding: 18px 32px;
-  h1 {
+  h1, h3 {
     color: ${({ theme }) => theme.colors.mainBg};
   }
 `;
@@ -47,6 +47,27 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+`;
+
+Widget.Topic = styled.a`
+  background-color: ${({ theme }) => theme.colors.git};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  color: ${({ theme }) => theme.colors.contrastText};
+  cursor: pointer;
+  display: block;
+  margin-bottom: 8px;
+  outline: 0;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: .3s;
+
+  &:hover,
+  &:focus{
+    opacity:.5;
+  }
+  &:enabled{
+    background-color: ${({ theme }) => theme.colors.contrastText}
   }
 `;
 

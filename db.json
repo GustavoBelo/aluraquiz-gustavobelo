@@ -4,15 +4,15 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://phoneky.co.uk/thumbs/screensavers/down/cartoon-anime/spiderpigs_c2c8zavc.gif",
+        "title": "Quais nomes Homer deu a um porco que ele leva para casa?",
+        "description": "Essa é pra aquecer haha",
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Porco de Ferro e Porco Man",
+          "Porco Aranha e Harry Porco",
+          "Porco Boster e Porco Aranha",
+          "Porco Man e Harry Porco"
         ]
       },
       {
@@ -32,7 +32,7 @@
     "theme": {
       "colors": {
         "primary": "#fdd835",
-        "secondary": "#b19725",
+        "secondary": "#fab950",
         "mainBg": "#1C1814",
         "git": "#2979ff",
         "contrastText": "#FFFFFF",
