@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
 import db from '../db.json';
+import QuizLogo from '../src/components/QuizLogo';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
@@ -17,7 +18,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-
+        <QuizLogo />
         <Widget>
           <Widget.Header>
             <h1>Quiz dos Simpsons</h1>
@@ -25,7 +26,7 @@ export default function Home() {
 
           <Widget.Content>
 
-            <form onSubmit={function (infosDoEvento) {
+            <form onSubmit={function pushName(infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
               // router manda para a próxima página
@@ -51,7 +52,7 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>The legend of Zelda</h1>
+            <h1>Quizes da galera ;)</h1>
             <p>lorem sit lorum sip...</p>
           </Widget.Content>
         </Widget>

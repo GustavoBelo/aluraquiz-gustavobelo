@@ -7,6 +7,7 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import QuestionWidget from '../src/components/QuestionWidget';
+import ResultWidget from '../src/components/ResultWidget';
 
 function LoadingWidget() {
   return (
@@ -31,30 +32,39 @@ const screenStates = {
 };
 
 export default function QuizPage() {
-  const [screenState, setSecreenState] = React.useState(screenStates.LOADING);
+  const [screenState, setScreenState] = React.useState(screenStates.LOADING);
+  const [results, setResults] = React.useState([]);
   const totalQuestions = db.questions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
-  const question = db.questions[currentQuestion];
-
+  const questionIndex = currentQuestion;
+  const question = db.questions[questionIndex];
   /*
   atualizado === willUpdate
   morre === willUnmount
   */
 
+  function addResult(result) {
+  // results.push(result);
+    setResults([
+      ...results,
+      result,
+    ]);
+  }
+
   React.useEffect(() => {
     // fetch()...
     setTimeout(() => {
-      setSecreenState(screenStates.QUIZ);
+      setScreenState(screenStates.QUIZ);
     }, 1 * 1000);
     // nasce ===didMount
   }, []);
 
-  function handleSubmit() {
-    const nextQuestion = currentQuestion + 1;
+  function handleSubmitQuiz() {
+    const nextQuestion = questionIndex + 1;
     if (nextQuestion < totalQuestions) {
       setCurrentQuestion(nextQuestion);
     } else {
-      setCurrentQuestion(screenStates.RESULT);
+      setScreenState(screenStates.RESULT);
     }
   }
 
@@ -65,14 +75,15 @@ export default function QuizPage() {
         {screenState === screenStates.QUIZ && (
         <QuestionWidget
           question={question}
-          currentQuestion={currentQuestion}
+          questionIndex={currentQuestion}
           totalQuestions={totalQuestions}
-          onSubmit={handleSubmit}
+          onSubmit={handleSubmitQuiz}
+          addResult={addResult}
         />
         )}
         { screenState === screenStates.LOADING && <LoadingWidget />}
 
-        { screenState === screenStates.RESULT && <div>vc acertou x questoes haha</div>}
+        { screenState === screenStates.RESULT && <ResultWidget results={results} />}
       </QuizContainer>
     </QuizBackground>
   );
